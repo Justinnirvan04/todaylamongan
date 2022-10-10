@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/orderlistTextview"
+        android:layout_width="315dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Daftar Pesanan"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/orderDetailstextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill_horizontal"
+            android:hint="Silahkan pilih pesanan di halaman depan."
+            android:textColor="#c000"
+            android:textSize="25sp"
+            android:fontFamily="@font/gatholic"
+
+            />
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="140dp">
+
+        <TextView
+            android:id="@+id/showprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg"
+            android:layout_gravity="center"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:hint="Total"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/kembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price_total_textView"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:onClick="kemenu"
+                android:text="Bayar"
+                android:textColor="#fff" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
